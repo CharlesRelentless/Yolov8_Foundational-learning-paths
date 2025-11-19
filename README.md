@@ -46,7 +46,7 @@ else:
     print("❌ CUDA不可用，请检查安装")
 ```
 
-**测试yolo**
+**测试Yolo**
 ```python
 from ultralytics import YOLO
 # 加载预训练的 YOLOv8n 模型
