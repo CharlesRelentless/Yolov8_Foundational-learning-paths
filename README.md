@@ -56,11 +56,12 @@
 - **链接**: https://pan.baidu.com/s/1eKkHXpR7fFM0bVzIA95pJg?pwd=y6ga
 - **提取码**: y6ga
 ## 🗂️ 网盘内容文件结构
-├── RoadMarkingData/ # 标线数据集
-├── D-道路车道线检测1700数据集左转右转直行/ # 车道线检测数据集
-├── ultralytics-main/ # YOLOv8环境配置
-├── igg_2.3.8/ # 科学上网工具
-└── README.md # 项目说明文档
+yolov8-road-marking/
+├── RoadMarkingData/                    # 标线数据集
+├── D-道路车道线检测1700数据集左转右转直行/   # 车道线检测数据集  
+├── ultralytics-main/                   # YOLOv8环境配置
+├── igg_2.3.8/                         # 科学上网工具
+└── README.md                          # 项目说明文档
 ## 🛠️ 技术栈
 
 - **框架**: YOLOv8
