@@ -47,13 +47,14 @@ else:
 ```
 
 **测试yolo**
-```from ultralytics import YOLO
-    # 加载预训练的 YOLOv8n 模型
-    model = YOLO('yolo11n.pt')
-    # 定义图像文件的路径
-    source = 'cat.png' #更改为自己的图片路径
-    # 运行推理，并附加参数
-    model.predict(source, save=True)
+```python
+from ultralytics import YOLO
+# 加载预训练的 YOLOv8n 模型
+model = YOLO('yolo11n.pt')
+# 定义图像文件的路径
+source = 'cat.png' #更改为自己的图片路径
+# 运行推理，并附加参数
+model.predict(source, save=True)
 ```
 
 ### 第二阶段：数据收集准备
