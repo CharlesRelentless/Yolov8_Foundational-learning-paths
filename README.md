@@ -15,10 +15,6 @@
 - 安装PyTorch、OpenCV、Ultralytics等库
 - 参考：[YOLOv8环境配置](https://blog.csdn.net/qq_67105081/article/details/137519207)
 
-#### 4. 安装YOLOv8及相关依赖
-- 安装PyTorch、OpenCV、Ultralytics等库
-- 参考：[YOLOv8环境配置](https://blog.csdn.net/qq_67105081/article/details/137519207)
-
 
 
 ### 第二阶段：数据收集准备
