@@ -18,30 +18,30 @@
 
 #### 4. 环境验证与测试
 
-import torch
-import sys
+    import torch
+    import sys
 
-print("=" * 60)
-print("系统环境验证")
-print("=" * 60)
-print(f"Python版本: {sys.version.split()[0]}")
-print(f"PyTorch版本: {torch.__version__}")
-print(f"编译CUDA版本: {torch.version.cuda}")
-print(f"CUDA是否可用: {torch.cuda.is_available()}")
+    print("=" * 60)
+    print("系统环境验证")
+    print("=" * 60)
+    print(f"Python版本: {sys.version.split()[0]}")
+    print(f"PyTorch版本: {torch.__version__}")
+    print(f"编译CUDA版本: {torch.version.cuda}")
+    print(f"CUDA是否可用: {torch.cuda.is_available()}")
 
-if torch.cuda.is_available():
-    print(f"检测到的CUDA版本: 13.0")
-    print(f"GPU设备: {torch.cuda.get_device_name(0)}")
+    if torch.cuda.is_available():
+        print(f"检测到的CUDA版本: 13.0")
+        print(f"GPU设备: {torch.cuda.get_device_name(0)}")
     
-    # 实际计算测试
-    print("\n🧪 运行GPU计算测试...")
-    a = torch.randn(1000, 1000).cuda()
-    b = torch.randn(1000, 1000).cuda()
-    c = torch.matmul(a, b)
-    print(f"GPU计算测试结果: 矩阵 {c.shape} 计算成功!")
-    print("✅ 环境配置成功！")
-else:
-    print("❌ CUDA不可用，请检查安装")
+        # 实际计算测试
+        print("\n🧪 运行GPU计算测试...")
+        a = torch.randn(1000, 1000).cuda()
+        b = torch.randn(1000, 1000).cuda()
+        c = torch.matmul(a, b)
+        print(f"GPU计算测试结果: 矩阵 {c.shape} 计算成功!")
+        print("✅ 环境配置成功！")
+    else:
+        print("❌ CUDA不可用，请检查安装")
 
 
 ### 第二阶段：数据收集准备
