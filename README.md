@@ -16,6 +16,32 @@
 - 安装PyTorch、OpenCV、Ultralytics等库
 - 参考：[YOLOv8环境配置](https://blog.csdn.net/qq_67105081/article/details/137519207)
 
+#### 4. 环境验证与测试
+
+import torch
+import sys
+
+print("=" * 60)
+print("系统环境验证")
+print("=" * 60)
+print(f"Python版本: {sys.version.split()[0]}")
+print(f"PyTorch版本: {torch.__version__}")
+print(f"编译CUDA版本: {torch.version.cuda}")
+print(f"CUDA是否可用: {torch.cuda.is_available()}")
+
+if torch.cuda.is_available():
+    print(f"检测到的CUDA版本: 13.0")
+    print(f"GPU设备: {torch.cuda.get_device_name(0)}")
+    
+    # 实际计算测试
+    print("\n🧪 运行GPU计算测试...")
+    a = torch.randn(1000, 1000).cuda()
+    b = torch.randn(1000, 1000).cuda()
+    c = torch.matmul(a, b)
+    print(f"GPU计算测试结果: 矩阵 {c.shape} 计算成功!")
+    print("✅ 环境配置成功！")
+else:
+    print("❌ CUDA不可用，请检查安装")
 
 
 ### 第二阶段：数据收集准备
@@ -79,4 +105,12 @@
 - 目标检测数据集的准备和处理
 - 深度学习模型的训练和验证流程
 - 道路标线检测的实际应用
+
+## 💡 注意事项
+- 安装CUDA，基于你的GPU版本看安装哪个版本
+- 安装CUDNN_[NVIDIA cuDNN](https://developer.nvidia.com/cudnn) 是一个基于GPU加速的深度神经网络原语库。
+（要注意CUDNN和CUDA的版本匹配）
+- 安装conda的python环境，要注意python的版本匹配
+- 安装pytorch时，注意和cuda的匹配程度
+- 测试yolov8环境是否安装完成
 
