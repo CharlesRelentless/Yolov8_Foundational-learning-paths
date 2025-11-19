@@ -49,7 +49,7 @@ else:
 **测试YoloV**
 ```python
 from ultralytics import YOLO
-# 加载预训练的 YOLOv8n 模型
+# 加载预训练的 YOLOv11n 模型
 model = YOLO('yolo11n.pt')
 # 定义图像文件的路径
 source = 'cat.png' #更改为自己的图片路径
