@@ -1,7 +1,0 @@
-学习后记：
-注意事项
-（1）安装CUDA，基于你的GPU版本看安装哪个版本
-（2）安装CUDNN_[NVIDIA cuDNN](https://developer.nvidia.com/cudnn) 是一个基于GPU加速的深度神经网络原语库。
-要注意CUDNN和CUDA的版本匹配
-（3）安装conda的python环境，要注意python的版本匹配
-（4）安装pytorch时，注意和cuda的匹配程度
