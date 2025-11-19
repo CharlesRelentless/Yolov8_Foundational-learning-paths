@@ -15,6 +15,10 @@
 - 安装PyTorch、OpenCV、Ultralytics等库
 - 参考：[YOLOv8环境配置](https://blog.csdn.net/qq_67105081/article/details/137519207)
 
+#### 4. 安装YOLOv8及相关依赖
+- 安装PyTorch、OpenCV、Ultralytics等库
+- 参考：[YOLOv8环境配置](https://blog.csdn.net/qq_67105081/article/details/137519207)
+
 
 
 ### 第二阶段：数据收集准备
@@ -22,18 +26,6 @@
 #### 可用数据集：
 - `RoadMarkingData/` - 标线数据集
 - `D-道路车道线检测1700数据集左转右转直行/` - 车道线检测数据集
-
-本项目使用的完整数据集已上传至百度网盘：
-
-- **文件名**：`yolov8识别道路标线.zip`
-- **链接**：https://pan.baidu.com/s/1eKkHXpR7fFM0bVzIA95pJg?pwd=y6ga  
-- **提取码**：`y6ga`
-## 🗂️ 网盘内容文件结构
-├── RoadMarkingData/ # 标线数据集
-├── D-道路车道线检测1700数据集左转右转直行/ # 车道线检测数据集
-├── ultralytics-main/ # YOLOv8环境配置
-├── igg_2.3.8/ # 科学上网工具
-└── README.md # 项目说明文档
 
 #### 数据准备步骤：
 1. 数据标注
@@ -57,4 +49,37 @@
 - 在测试集上可视化检测结果
 - 分析模型表现
 
+
+## 📦 数据下载
+
+数据集已上传至百度网盘：
+- **链接**: https://pan.baidu.com/s/1eKkHXpR7fFM0bVzIA95pJg?pwd=y6ga
+- **提取码**: y6ga
+## 🗂️ 网盘内容文件结构
+├── RoadMarkingData/ # 标线数据集
+├── D-道路车道线检测1700数据集左转右转直行/ # 车道线检测数据集
+├── ultralytics-main/ # YOLOv8环境配置
+├── igg_2.3.8/ # 科学上网工具
+└── README.md # 项目说明文档
+
+## 🛠️ 技术栈
+
+- **框架**: YOLOv8
+- **深度学习库**: PyTorch
+- **图像处理**: OpenCV
+- **开发环境**: Python + PyCharm
+
+## 📖 参考资料
+
+1. [YOLOv8原理解释](https://blog.csdn.net/bingoaaa/article/details/142694776)
+2. [YOLOv8环境配置教程](https://blog.csdn.net/qq_67105081/article/details/137519207)
+3. [YOLOv8目标检测完整步骤](https://blog.csdn.net/qq_67105081/article/details/137545156)
+
+## 🎯 学习目标
+
+通过本项目，你将掌握：
+- YOLOv8环境配置和模型训练
+- 目标检测数据集的准备和处理
+- 深度学习模型的训练和验证流程
+- 道路标线检测的实际应用
 
