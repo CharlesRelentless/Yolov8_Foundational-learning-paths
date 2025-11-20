@@ -12,7 +12,9 @@
 - 参考：[Conda环境管理教程](https://blog.csdn.net/weixin_45131680/article/details/141566752)
 
 #### 3. 安装YOLOv8及相关依赖
-- 安装cuda以及cudnn（conda环境内安装：conda install nvidia::cudnn -c nvidia）
+- **安装 CUDA 与 cuDNN**（推荐在 Conda 环境中安装）：
+  ```bash
+  conda install nvidia::cudnn -c nvidia
 - 安装PyTorch、OpenCV、Ultralytics等库
 - （conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia；本次安装cuda13.0，cuda13.0也可兼容pytorch-cuda=12.1）
 - 参考：[YOLOv8环境配置](https://blog.csdn.net/qq_67105081/article/details/137519207)
