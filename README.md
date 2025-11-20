@@ -13,7 +13,8 @@
 
 #### 3. 安装YOLOv8及相关依赖
 - 安装cuda以及cudnn（conda环境内安装：conda install nvidia::cudnn -c nvidia）
-- 安装PyTorch、OpenCV、Ultralytics等库（conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia；本次安装cuda13.0，cuda13.0也可兼容pytorch-cuda=12.1）
+- 安装PyTorch、OpenCV、Ultralytics等库
+  -（conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia；本次安装cuda13.0，cuda13.0也可兼容pytorch-cuda=12.1）
 - 参考：[YOLOv8环境配置](https://blog.csdn.net/qq_67105081/article/details/137519207)
 
 #### 4. 环境验证与测试
@@ -79,12 +80,12 @@ model.predict(source, save=True)
 
    **LabelImg 标注操作步骤**：
 
-   1. 创建 LabelImg 的 Conda 环境并安装：
+   （1） 创建 LabelImg 的 Conda 环境并安装：
       ```bash
       pip install labelimg
       ```
 
-   2. 准备数据目录结构（推荐如下）：
+   （2） 准备数据目录结构（推荐如下）：
       ```
       data/
       ├── JPEGImages/      # 存放所有图片
@@ -94,7 +95,7 @@ model.predict(source, save=True)
 
       ![目录结构示意图](https://github.com/user-attachments/assets/58c48912-f906-414a-97ca-1ca175c26fbf)
 
-   3. 开始标注，界面示例如下：
+   （3）开始标注，界面示例如下：
 
       ![LabelImg 标注界面](https://github.com/user-attachments/assets/d2b1750e-2425-41cd-9702-7bb85f9c56d8)
 
