@@ -67,6 +67,11 @@ model.predict(source, save=True)
 1. 数据标注
 -  推荐工具：[labelimg](https://gitcode.com/gh_mirrors/lab/labelImg?utm_source=highlight_word_gitcode&word=labelimg&isLogin=1&from_link=4d701093206bac8520537a6e6a98bcb3)、LabelStudio、CVAT
 -  标注格式：YOLO格式（生成.txt标注文件）
+以下是labeling标注的步骤：
+（1）创建Labelimg的conda环境，pip install labelimg
+（2）在使用labelimg之前，需要准备好数据集存放位置，这里推荐创建一个大文件夹为data，里面有JPEGImages、Annotations和classes.txt，其中JPEGImages文件夹里面放所有的图片，Annotations文件夹是将会用来对标签文件存放，classes.txt里存放所有的类别，每种一行。
+ <img width="586" height="276" alt="image" src="https://github.com/user-attachments/assets/58c48912-f906-414a-97ca-1ca175c26fbf" />
+
 3. 数据集划分（训练集75%/验证集15%/测试集15%）
 
 ### 第三阶段：模型训练
