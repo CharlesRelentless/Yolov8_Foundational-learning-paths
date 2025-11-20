@@ -59,20 +59,50 @@ model.predict(source, save=True)
 
 ### 第二阶段：数据收集准备
 
-#### 可用数据集：
-- `RoadMarkingData/` - 标线数据集
-- `D-道路车道线检测1700数据集左转右转直行/` - 车道线检测数据集
+#### 可用数据集
 
-#### 数据准备步骤：
-1. 数据标注
--  推荐工具：[labelimg](https://gitcode.com/gh_mirrors/lab/labelImg?utm_source=highlight_word_gitcode&word=labelimg&isLogin=1&from_link=4d701093206bac8520537a6e6a98bcb3)、LabelStudio、CVAT
--  标注格式：YOLO格式（生成.txt标注文件）
-以下是labeling标注的步骤：
-（1）创建Labelimg的conda环境，pip install labelimg
-（2）在使用labelimg之前，需要准备好数据集存放位置，这里推荐创建一个大文件夹为data，里面有JPEGImages、Annotations和classes.txt，其中JPEGImages文件夹里面放所有的图片，Annotations文件夹是将会用来对标签文件存放，classes.txt里存放所有的类别，每种一行。
- <img width="586" height="276" alt="image" src="https://github.com/user-attachments/assets/58c48912-f906-414a-97ca-1ca175c26fbf" />
+- `RoadMarkingData/` — 标线数据集  
+- `D-道路车道线检测1700数据集左转右转直行/` — 车道线检测数据集  
 
-3. 数据集划分（训练集75%/验证集15%/测试集15%）
+---
+
+#### 数据准备步骤
+
+1. **数据标注**
+
+   - **推荐工具**：
+     - [LabelImg](https://gitcode.com/gh_mirrors/lab/labelImg?utm_source=highlight_word_gitcode&word=labelimg&isLogin=1&from_link=4d701093206bac8520537a6e6a98bcb3)
+     - LabelStudio
+     - CVAT
+
+   - **标注格式**：YOLO 格式（生成 `.txt` 标注文件）
+
+   **LabelImg 标注操作步骤**：
+
+   1. 创建 LabelImg 的 Conda 环境并安装：
+      ```bash
+      pip install labelimg
+      ```
+
+   2. 准备数据目录结构（推荐如下）：
+      ```
+      data/
+      ├── JPEGImages/      # 存放所有图片
+      ├── Annotations/     # 存放生成的标签文件（.txt）
+      └── classes.txt      # 每行一个类别名称
+      ```
+
+      ![目录结构示意图](https://github.com/user-attachments/assets/58c48912-f906-414a-97ca-1ca175c26fbf)
+
+   3. 开始标注，界面示例如下：
+
+      ![LabelImg 标注界面](https://github.com/user-attachments/assets/d2b1750e-2425-41cd-9702-7bb85f9c56d8)
+
+2. **数据集划分**
+
+   - 训练集：75%  
+   - 验证集：15%  
+   - 测试集：15%
 
 ### 第三阶段：模型训练
 
