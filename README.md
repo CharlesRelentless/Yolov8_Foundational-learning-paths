@@ -65,8 +65,8 @@ model.predict(source, save=True)
 
 #### 数据准备步骤：
 1. 数据标注
-   推荐工具：LabelImg、LabelStudio、CVAT
-   标注格式：YOLO格式（生成.txt标注文件）
+-  推荐工具：LabelImg、LabelStudio、CVAT
+-  标注格式：YOLO格式（生成.txt标注文件）
 3. 数据集划分（训练集/验证集/测试集）
 
 ### 第三阶段：模型训练
