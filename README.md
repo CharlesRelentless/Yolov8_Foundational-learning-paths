@@ -100,10 +100,14 @@ model.predict(source, save=True)
       ![目录结构示意图](https://github.com/user-attachments/assets/58c48912-f906-414a-97ca-1ca175c26fbf)
 
    （3）开始标注，界面示例如下：
-
+      ```bash
+      conda activate labelimg
+      cd [Data Path]:cd E:/;cd 'E:\Coding tools\PyCharm\labelImg-master\data'
+      labelimg JPEGImages classes.txt
+      ```
       ![LabelImg 标注界面](https://github.com/user-attachments/assets/d2b1750e-2425-41cd-9702-7bb85f9c56d8)
 
-2. **数据集划分**
+3. **数据集划分**
 
    - 训练集：75%  
    - 验证集：15%  
