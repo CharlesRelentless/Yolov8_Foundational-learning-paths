@@ -65,7 +65,7 @@ model.predict(source, save=True)
 
 #### 数据准备步骤：
 1. 数据标注
--  推荐工具：LabelImg、LabelStudio、CVAT
+-  推荐工具：[labelimg](https://gitcode.com/gh_mirrors/lab/labelImg?utm_source=highlight_word_gitcode&word=labelimg&isLogin=1&from_link=4d701093206bac8520537a6e6a98bcb3)、LabelStudio、CVAT
 -  标注格式：YOLO格式（生成.txt标注文件）
 3. 数据集划分（训练集75%/验证集15%/测试集15%）
 
