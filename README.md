@@ -94,7 +94,6 @@ model.predict(source, save=True)
       data/
       ├── JPEGImages/      # 存放所有图片
       ├── labels/          # 存放生成的标签文件（.txt）
-      ├── Annotations/     # 存放生成的yolo文件
       └── classes.txt      # 每行一个类别名称
       ```
    （3）开始标注，界面示例如下：
