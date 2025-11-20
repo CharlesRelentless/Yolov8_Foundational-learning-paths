@@ -93,12 +93,10 @@ model.predict(source, save=True)
       ```
       data/
       ├── JPEGImages/      # 存放所有图片
-      ├── Annotations/     # 存放生成的标签文件（.txt）
+      ├── labels/          # 存放生成的标签文件（.txt）
+      ├── Annotations/     # 存放生成的yolo文件
       └── classes.txt      # 每行一个类别名称
       ```
-
-      ![目录结构示意图](https://github.com/user-attachments/assets/58c48912-f906-414a-97ca-1ca175c26fbf)
-
    （3）开始标注，界面示例如下：
       ```bash
       conda activate labelimg
