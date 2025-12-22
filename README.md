@@ -163,10 +163,25 @@ model.predict(source, save=True)
 - 道路标线检测的实际应用
 
 ## 💡 注意事项
-- 安装CUDA，基于你的GPU版本看安装哪个版本
-- 安装CUDNN_[NVIDIA cuDNN](https://developer.nvidia.com/cudnn) 是一个基于GPU加速的深度神经网络原语库。
-（要注意CUDNN和CUDA的版本匹配）
-- 安装conda的python环境，要注意python的版本匹配
-- 安装pytorch时，注意和cuda的匹配程度
-- 测试yolov8环境是否安装完成
 
+- **安装 CUDA**  
+  根据您的 GPU 版本选择对应的 CUDA 版本进行安装。
+- **安装 cuDNN**  
+  [NVIDIA cuDNN](https://developer.nvidia.com/cudnn) 是基于 GPU 加速的深度神经网络库。  
+  **⚠️ 注意**：cuDNN 版本需与 CUDA 版本匹配。
+- **配置 Python 环境**  
+  建议使用 conda 创建虚拟环境，并注意 Python 版本兼容性。
+- **安装 PyTorch**  
+  安装时需选择与 CUDA 版本对应的 PyTorch 版本。
+- **验证 YOLOv8 环境**  
+  安装完成后，请运行简单测试确认环境配置成功。
+---
+
+## 📬 联系与交流
+欢迎来到本项目！我非常期待与各位开发者交流想法、讨论技术细节或探索合作可能。如果您有任何疑问、建议，或只是想聊聊相关技术，随时欢迎联系我：
+**📧 邮箱：** [crs9charles@foxmail.com](mailto:crs9charles@foxmail.com)
+感谢您的关注与支持，希望我们能一起让这个项目变得更好！🚀
+
+---
+
+**⭐ 如果您觉得这个项目有帮助，欢迎点个 Star！您的支持是我持续更新的动力。**
