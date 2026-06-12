@@ -132,21 +132,12 @@ model.predict(source, save=True)
 ## 📦 数据下载
 
 ### 数据集
-- **链接**: https://pan.baidu.com/s/1eKkHXpR7fFM0bVzIA95pJg?pwd=y6ga
-- **提取码**: y6ga
+- **链接**: https://pan.baidu.com/netdisk/share?surl=XfUQphaoLz6wY4kytf4NEg
+- **提取码**: ylk6
 
 **文件夹说明：**
-- `RoadMarkingData/` - 标线数据集
-- `D-道路车道线检测1700数据集左转右转直行/` - 车道线检测数据集
-- `ultralytics-main/` - YOLOv8环境配置
-- `igg_2.3.8/` - 科学上网工具
-- `README.md` - 项目说明文档
-
-### 科研软件工具包
-论文写作、文献管理、Endnote、论文图表制作等科研必备工具集合。
-- **链接**: https://pan.baidu.com/netdisk/share?surl=yE1rmuiFB8V03yfQXXeQZA
-- **提取码**: yol8
-- **有效期**: 30天（如需延期请联系更新）
+- `RoadMarkingData.zip` (170MB) - 标线数据集
+- `D-道路车道线检测1700数据集左转右转直行.zip` (488MB) - 车道线检测数据集
 ## 🛠️ 技术栈
 
 - **框架**: YOLOv8
